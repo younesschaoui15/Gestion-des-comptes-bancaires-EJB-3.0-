@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="PU_e-Banque" transaction-type="JTA" >
+		<jta-data-source>java:/DS_eBanque</jta-data-source>
+		<class>metier.entities.CompteCourant</class>
+		<class>metier.entities.CompteEpargne</class>
+		<class>metier.entities.Operation</class>
+		<class>metier.entities.Compte</class>
+		<class>metier.entities.Client</class>
+		<class>metier.entities.Groupe</class>
+		<class>metier.entities.Versement</class>
+		<class>metier.entities.Employe</class>
+		<class>metier.entities.Retrait</class>
+		<class>metier.entities.Auth</class>
+		<!-- <properties>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+		</properties>  -->
+	</persistence-unit>
+</persistence>
